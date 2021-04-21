@@ -1,0 +1,142 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "8afb5e3aa956eac3a7a09855547a868c",
+    "entities": [
+      {
+        "tableName": "UserDetails",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`user_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `Empcodes` TEXT, `Region` TEXT, `Employee_Name` TEXT, `Territory` TEXT, `Desgn` TEXT, `employee_AM` TEXT, `Am_code` TEXT, `AM_Territory` TEXT, `employee_RBM` TEXT, `RBM_code` TEXT, `RBM_Territory` TEXT, `employee_zbm` TEXT, `ZBM_code` TEXT, `ZBM_Territory` TEXT, `employee_SM` TEXT, `SM_code` TEXT, `SM_Territory` TEXT, `Password` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "user_id",
+            "columnName": "user_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "Empcodes",
+            "columnName": "Empcodes",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "Region",
+            "columnName": "Region",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "Employee_Name",
+            "columnName": "Employee_Name",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "Territory",
+            "columnName": "Territory",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "Desgn",
+            "columnName": "Desgn",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "employee_AM",
+            "columnName": "employee_AM",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "Am_code",
+            "columnName": "Am_code",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "AM_Territory",
+            "columnName": "AM_Territory",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "employee_RBM",
+            "columnName": "employee_RBM",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "RBM_code",
+            "columnName": "RBM_code",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "RBM_Territory",
+            "columnName": "RBM_Territory",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "employee_zbm",
+            "columnName": "employee_zbm",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "ZBM_code",
+            "columnName": "ZBM_code",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "ZBM_Territory",
+            "columnName": "ZBM_Territory",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "employee_SM",
+            "columnName": "employee_SM",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "SM_code",
+            "columnName": "SM_code",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "SM_Territory",
+            "columnName": "SM_Territory",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "Password",
+            "columnName": "Password",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "user_id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '8afb5e3aa956eac3a7a09855547a868c')"
+    ]
+  }
+}
